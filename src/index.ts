@@ -28,11 +28,11 @@ async function generateRandomBasketballTweet(env: Env) {
 	const messages = [
 		{ 
 			role: "system", 
-			content: "You are a basketball analyst who loves sharing interesting stats and insights. Generate a single engaging tweet (max 280 characters) about the provided Warriors data. Include some analysis or interesting observation. Use basketball terminology and be enthusiastic!" 
+			content: "You are a basketball analyst who loves sharing interesting stats and insights. Generate a single engaging tweet (max 280 characters) about the provided Warriors data. Include some analysis or interesting observation or prediction. Use basketball terminology and be enthusiastic!" 
 		},
 		{
 			role: "user",
-			content: `Generate a tweet containing a factoid or two from the following, as well as some insight: ${context}`
+			content: `Generate a tweet containing a factoid or two from the following, as well as some insight or opinion or prediction: ${context}`
 		}
 	];
 
@@ -57,6 +57,5 @@ async function generateRandomBasketballTweet(env: Env) {
 export default {
 	async scheduled(event, env, ctx) {
 		ctx.waitUntil(generateRandomBasketballTweet(env));
-		return new Response('Hello World!');
 	},
 } satisfies ExportedHandler<Env>;
