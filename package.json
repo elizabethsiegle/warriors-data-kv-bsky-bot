@@ -15,5 +15,13 @@
     "typescript": "^5.5.2",
     "vitest": "2.0.5",
     "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.13.16",
+    "cheerio": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "fsa": "^0.5.1",
+    "puppeteer": "^23.8.0",
+    "request": "^2.88.2"
   }
 }
