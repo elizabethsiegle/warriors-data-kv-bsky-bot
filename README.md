@@ -1,4 +1,6 @@
 # Automate Posts to BlueSky with BlueSky API, Cloudflare Workers, Cloudflare KV, Cron Triggers
+[<img src="https://img.youtube.com/vi/LpoiOMC8w8Y/0.jpg">](https://youtu.be/LpoiOMC8w8Y "Automate AI-Generated Posts to Bluesky with Cloudflare Workers, Cron Triggers, and the Bluesky API")
+
 This is a [Cloudflare Workers](https://workers.cloudflare.com/) application that makes use of [Cron Triggers](https://developers.cloudflare.com/workers/configuration/cron-triggers/) to automate posting once a day to [Blue Sky](https://bsky.app/). It passes data from [basketball-data/GSW.json](./basketball-data/GSW.json) hosted in a Cloudflare KV namespace to a Workers AI call using [Llama-3.2](https://developers.cloudflare.com/workers-ai/models/llama-3.2-3b-instruct/).
 
 That data was scraped from [https://www.basketball-reference.com/teams/${team}/${year}.html](https://www.basketball-reference.com/teams/GSW/2023.html)
