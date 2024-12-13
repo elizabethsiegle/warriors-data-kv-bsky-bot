@@ -8,7 +8,13 @@ That data was scraped from [https://www.basketball-reference.com/teams/${team}/$
 Check it out on [Blue Sky here](https://bsky.app/profile/warriorsbot.bsky.social)!
 
 ## Setup
-Copy [.dev.vars.example](./.dev.vars.example) to `.dev.vars` and add your `BLUESKY_USERNAME` and `BLUESKY_PASSWORD`.
+You need a Cloudflare account. Copy [.dev.vars.example](./.dev.vars.example) to `.dev.vars` and add your `BLUESKY_USERNAME` and `BLUESKY_PASSWORD`.
+
+If you want to start from scratch, run 
+```
+npm create cloudflare@latest
+```
+and pick `Hello World Example` and `TypeScript`.
 
 For more information about hosting data on Workers KV, see this [Workers KV Getting Started page](https://developers.cloudflare.com/kv/get-started/)
 
